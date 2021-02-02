@@ -50,6 +50,23 @@ namespace Valtozok
             Console.WriteLine(l2);
             Console.WriteLine(l3);
 
+            //Szöveges adatok tárolása
+
+            string szoveg = "Ez egy szöveg";
+            
+            Console.WriteLine(szoveg[0]);
+            Console.WriteLine(szoveg[1]);
+
+            Console.WriteLine(szoveg.Length);
+
+            //Karakterek tárolása
+            char kar = 'b';
+
+            //Logikai érték
+            bool logikai = true;
+
+            logikai = false;
+
 
 
 
