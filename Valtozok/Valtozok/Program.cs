@@ -41,6 +41,17 @@ namespace Valtozok
 
             Console.WriteLine($"{Byte.MinValue},{Byte.MaxValue}");
 
+            //Nem egész, azaz lebegőpontos számok
+            float l1 = 19.12345678901234567890123456789f;
+            double l2 = 19.12345678901234567890123456789;
+            decimal l3 = 19.12345678901234567890123456789m;
+
+            Console.WriteLine(l1);
+            Console.WriteLine(l2);
+            Console.WriteLine(l3);
+
+
+
 
 
             Console.ReadKey();
