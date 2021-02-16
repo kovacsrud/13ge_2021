@@ -52,7 +52,44 @@ namespace Stringek
             Console.WriteLine(datumElemek[0]);
             Console.WriteLine(datumElemek[1]);
             Console.WriteLine(datumElemek[2]);
-         
+
+            string cserel = "Ennek a szövegnek cseréljük a betűit.";
+
+            //e betűk cseréje x-re
+            Console.WriteLine(cserel.Replace('e','x'));
+
+            //e betűk cseréje "semmire" azaz az e eltüntetése 
+            //a szövegből
+
+            Console.WriteLine(cserel.Replace("e", ""));
+
+            Console.WriteLine(cserel.Replace(" ", ""));
+
+            string szam = "145.678";
+            double szamertek = Convert.ToDouble(szam.Replace('.',','));
+
+            Console.WriteLine(szamertek);
+
+            string levagando = "# &  @    valami adat      @  &&  <";
+
+            //Felesleges szóközök és egyéb karakterek eltávolítása
+            //a szöveg elejéről és végéről
+
+            //Egy karakter tömbben felsorolhatjuk azokat a karaktereket
+            // amelyeket el akarunk távolítani a szöveg elejéről
+            // vagy végéről.
+
+            char[] betuk = {'#','&',' ','@','<'};
+            Console.WriteLine(levagando.Trim(betuk));
+            Console.WriteLine(levagando.TrimStart(betuk));
+            Console.WriteLine(levagando.TrimEnd(betuk));
+
+            char betu = '3';
+
+            Console.WriteLine(Char.IsWhiteSpace(betu));
+            Console.WriteLine(Char.IsUpper(betu));
+            Console.WriteLine(Char.IsDigit(betu));
+
 
             Console.ReadKey();
         }
