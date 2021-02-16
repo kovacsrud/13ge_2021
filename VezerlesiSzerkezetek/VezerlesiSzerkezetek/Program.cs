@@ -14,11 +14,11 @@ namespace VezerlesiSzerkezetek
             //elágazások
             //ismételt tevékenységek (ciklusok)
 
-            string sz1 = "Kovács";
-            string sz2 = "kovács";
+            string sz1 = "KovÁcS";
+            string sz2 = "koVáCs";
 
             //Egyszeres egyágú
-            if (sz1==sz2)
+            if (sz1.ToLower()==sz2.ToLower())
             {
                 Console.WriteLine("A nevek megegyeznek!");  
             }
@@ -32,6 +32,21 @@ namespace VezerlesiSzerkezetek
             {
                 Console.WriteLine("A nevek nem egyeznek meg!");
             }
+
+            Console.Write("Adjon meg egy számot:");
+            int szam = Convert.ToInt32(Console.ReadLine());
+
+            //Állapítsuk meg, hogy a szám pozitív, vagy negatív!
+
+            if (szam>0)
+            {
+                Console.WriteLine("A szám pozitív!");
+                
+            } else
+            {
+                Console.WriteLine("Negatív!");
+            }
+
 
 
 
