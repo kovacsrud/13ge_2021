@@ -47,8 +47,35 @@ namespace VezerlesiSzerkezetek
                 Console.WriteLine("Negatív!");
             }
 
+            //Többszörös szelekció
 
+            if (szam>0)
+            {
+                Console.WriteLine("A szám pozitív!");
+            }
+            else if (szam==0)
+            {
+                Console.WriteLine("A szám nulla!");
+            } else
+            {
+                Console.WriteLine("A szám negatív!");
+            }
 
+            //Többszörös szelekció a switch
+            Console.Write("Adj meg egy számot 1 és 4 között:");
+            int szam2 = Convert.ToInt32(Console.ReadLine());
+
+            switch (szam2)
+            {
+                case 1: Console.WriteLine("Egy"); break;
+                case 2: Console.WriteLine("Kettő");break;
+                case 3: Console.WriteLine("Három"); break;
+                case 4: Console.WriteLine("Négy"); break;
+
+                default:
+                    Console.WriteLine("Nem ismerem fel a számot!");
+                    break;
+            }
 
 
             Console.ReadKey();
