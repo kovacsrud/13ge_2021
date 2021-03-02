@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ciklusok", "Ciklusok\Ciklus
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tombok", "Tombok\Tombok.csproj", "{A541AAEE-D8D0-47B8-9B0A-511AF29B0E15}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeletlenSzam", "VeletlenSzam\VeletlenSzam.csproj", "{2947E8FD-37E1-49DE-9B40-4B89F1B1565E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A541AAEE-D8D0-47B8-9B0A-511AF29B0E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A541AAEE-D8D0-47B8-9B0A-511AF29B0E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A541AAEE-D8D0-47B8-9B0A-511AF29B0E15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2947E8FD-37E1-49DE-9B40-4B89F1B1565E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2947E8FD-37E1-49DE-9B40-4B89F1B1565E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2947E8FD-37E1-49DE-9B40-4B89F1B1565E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2947E8FD-37E1-49DE-9B40-4B89F1B1565E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
