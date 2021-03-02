@@ -20,7 +20,21 @@ namespace Ciklusok
             }
 
             //elöltesztelő ciklus
-
+            int a= 95;
+            while (a<=100)
+            {
+                Console.WriteLine(a);
+                a++;
+                //a+=1;
+                //a=a+1;
+            }
+            Console.WriteLine("-----------------");
+            a = 98;
+            do
+            {
+                Console.WriteLine(a);
+                a++;
+            } while (a<100);
 
             Console.ReadKey();
         }
