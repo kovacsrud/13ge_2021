@@ -36,6 +36,25 @@ namespace StringManipulacio
 
             Console.WriteLine(szoveg);
 
+            string szovegEsSzam = "Számok 238 a szövegben 671";
+            //A feladat, hogy adjuk össze a szövegben szereplő
+            //számjegyeket.
+
+            char[] szovegEsSzamCh = szovegEsSzam.ToCharArray();
+
+            int osszeg = 0;
+
+            for (int i = 0; i < szovegEsSzamCh.Length; i++)
+            {
+                if (Char.IsDigit(szovegEsSzamCh[i]))
+                {
+                    osszeg += (int)Char.GetNumericValue(szovegEsSzamCh[i]);
+                } 
+                
+            }
+
+            Console.WriteLine(osszeg);
+
             Console.ReadKey();
         }
     }
