@@ -40,11 +40,22 @@ namespace Listak
 
             //A foreach ciklussal nem lehet módosítani a lista vagy tömb
             //egy adott elemét!!
+
+            //Törlés a listáról index szerint
+            szamok.RemoveAt(0);
+
+            //Törlés a listáról az elem értéke szerint
+            szamok.Remove(34);
+
+            //A lista összes elemének törlése
+            szamok.Clear();
+
             foreach (var i in szamok)
             {
                 Console.WriteLine(i);
             }
 
+            
 
 
             Console.ReadKey();
