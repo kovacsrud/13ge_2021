@@ -49,6 +49,7 @@ namespace Lotto
                 tippek[i] = temp;
 
             }
+            Array.Sort(tippek);
             //Tippek listázása
             for (int i = 0; i < tippek.Length; i++)
             {
@@ -67,6 +68,7 @@ namespace Lotto
                 nyeroSzamok[i] = temp;
             }
 
+            Array.Sort(nyeroSzamok);
             for (int i = 0; i < nyeroSzamok.Length; i++)
             {
                 Console.Write(nyeroSzamok[i]+" ");
@@ -88,7 +90,13 @@ namespace Lotto
 
             talalat = 0;
 
-
+            for (int i = 0; i < tippek.Length; i++)
+            {
+                if (nyeroSzamok.Contains(tippek[i]))
+                {
+                    talalat++;
+                }
+            }
 
             Console.WriteLine($"Találat:{talalat}");
             Console.ReadKey();
