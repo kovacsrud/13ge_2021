@@ -34,15 +34,16 @@ namespace Lotto
             //Tömbök létrehozása
             int[] tippek = new int[szamDb];
             int[] nyeroSzamok = new int[szamDb];
+            Random rand = new Random();
 
             //Tippelés
             for (int i = 0; i < szamDb; i++)
             {
-                Console.Write("Adja meg a tippet:");
+                Console.Write($"Adja meg a(z) {i+1}. tippet:");
                 int temp = Convert.ToInt32(Console.ReadLine());
                 while (temp<1 || temp>osszSzam || tippek.Contains(temp))
                 {
-                    Console.Write("Hibás tipp!Adja meg újra:");
+                    Console.Write($"Hibás tipp!{i+1}.tipp újra:");
                     temp = Convert.ToInt32(Console.ReadLine());
                 }
                 tippek[i] = temp;
@@ -55,7 +56,22 @@ namespace Lotto
             }
             Console.WriteLine();
 
+            //Nyerőszámok sorsolása
+            for (int i = 0; i < szamDb; i++)
+            {
+                int temp = rand.Next(1, osszSzam + 1);
+                while (nyeroSzamok.Contains(temp))
+                {
+                    temp = rand.Next(1, osszSzam + 1);
+                }
+                nyeroSzamok[i] = temp;
+            }
 
+            for (int i = 0; i < nyeroSzamok.Length; i++)
+            {
+                Console.Write(nyeroSzamok[i]+" ");
+            }
+            Console.WriteLine();
             Console.ReadKey();
         }
     }
