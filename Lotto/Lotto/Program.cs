@@ -72,6 +72,25 @@ namespace Lotto
                 Console.Write(nyeroSzamok[i]+" ");
             }
             Console.WriteLine();
+
+            int talalat = 0;
+            //Találatok számának meghatározása
+            for (int i = 0; i < tippek.Length; i++)
+            {
+                for (int j = 0; j < nyeroSzamok.Length; j++)
+                {
+                    if (tippek[i]==nyeroSzamok[j])
+                    {
+                        talalat++;
+                    }
+                }
+            }
+
+            talalat = 0;
+
+
+
+            Console.WriteLine($"Találat:{talalat}");
             Console.ReadKey();
         }
     }
