@@ -13,10 +13,7 @@ namespace OOPAlapok
         public int magassag;
         public int suly;
 
-        //public void GetNev()
-        //{
-        //    Console.WriteLine($"A nevem:{nev}");
-        //}
+       
 
         public string GetNev()
         {
