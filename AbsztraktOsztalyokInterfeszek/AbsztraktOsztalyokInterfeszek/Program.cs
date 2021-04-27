@@ -58,8 +58,8 @@ namespace AbsztraktOsztalyokInterfeszek
             Console.WriteLine($"Az összterület:{osszterulet}");
 
             //Mennyi a körök összes területe?
-            
-
+            var korokterulete = sikidomok.FindAll(x => x.GetType() == typeof(Kor)).Sum(x=>x.Terulet());
+            Console.WriteLine($"A körök összes területe:{korokterulete}");
             Console.ReadKey();
         }
     }
