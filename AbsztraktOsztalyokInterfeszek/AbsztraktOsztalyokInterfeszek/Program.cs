@@ -53,7 +53,12 @@ namespace AbsztraktOsztalyokInterfeszek
                     Console.WriteLine($"{k.Sugar}");
                 }
             }
+            //Mennyi az összes síkidom területe?
+            var osszterulet = sikidomok.Sum(x=>x.Terulet());
+            Console.WriteLine($"Az összterület:{osszterulet}");
 
+            //Mennyi a körök összes területe?
+            
 
             Console.ReadKey();
         }
