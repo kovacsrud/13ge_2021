@@ -28,5 +28,10 @@ namespace AbsztraktOsztalyokInterfeszek
         {
             return Aoldal * Boldal;
         }
+
+        public override string ToString()
+        {
+            return $"Téglalap,A:{Aoldal},B:{Boldal},Kerület:{Kerulet():0.00},Terület:{Terulet():0.00}";
+        }
     }
 }

@@ -25,5 +25,10 @@ namespace AbsztraktOsztalyokInterfeszek
         {
             return Sugar * Sugar * Math.PI;
         }
+
+        public override string ToString()
+        {
+            return $"Kör,Sugár:{Sugar},Kerület:{Kerulet():0.00},Terület:{Terulet():0.00}";
+        }
     }
 }

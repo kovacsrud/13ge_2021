@@ -29,7 +29,31 @@ namespace AbsztraktOsztalyokInterfeszek
             Kor k1 = new Kor(33.78);
             Kor k2 = new Kor(78.43);
 
-            Console.WriteLine($"Kerület:{k1.Kerulet()},Terület:{k1.Terulet()}");
+            Console.WriteLine(t1.ToString());
+            Console.WriteLine(t2.ToString());
+            Console.WriteLine(k1.ToString());
+            Console.WriteLine(k2.ToString());
+
+            List<Sikidom> sikidomok = new List<Sikidom>();
+            sikidomok.Add(t1);
+            sikidomok.Add(t2);
+            sikidomok.Add(k1);
+            sikidomok.Add(k2);
+
+            foreach (var i in sikidomok)
+            {
+                if (i.GetType()==typeof(Teglalap))
+                {
+                    Teglalap t = (Teglalap)i;
+                    Console.WriteLine($"{t.Aoldal};{t.Boldal}");
+                }
+                if (i.GetType() == typeof(Kor))
+                {
+                    Kor k = (Kor)i;
+                    Console.WriteLine($"{k.Sugar}");
+                }
+            }
+
 
             Console.ReadKey();
         }
