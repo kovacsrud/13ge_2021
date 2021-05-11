@@ -37,9 +37,33 @@ namespace TombbeOlvasas
 
             Console.WriteLine($"A lista elemeinek száma:{versenyzok.Count}");
 
-            foreach (var i in versenyzok)
+            //foreach (var i in versenyzok)
+            //{
+            //    Console.WriteLine($"{i.Nev}:{i.Nyeremeny}");
+            //}
+
+            var angolok = versenyzok.FindAll(x=>x.Orszag=="Anglia");
+
+            
+
+            try
             {
-                Console.WriteLine($"{i.Nev}:{i.Nyeremeny}");
+                FileStream fajl = new FileStream("angolok.txt",FileMode.Create);
+                StreamWriter wr = new StreamWriter(fajl,Encoding.UTF8);
+
+                wr.WriteLine($"Név,Helyezés,Ország,Nyeremény");
+                foreach (var i in angolok)
+                {
+                    wr.WriteLine($"{i.Nev},{i.Helyezes},{i.Orszag},{i.Nyeremeny}");
+                }
+
+                wr.Close();
+
+                Console.WriteLine("Fájlba írás kész!");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);                
             }
 
             Console.ReadKey();
