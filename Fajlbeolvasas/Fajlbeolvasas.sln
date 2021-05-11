@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fajlbeolvasas", "Fajlbeolva
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TombbeOlvasas", "TombbeOlvasas\TombbeOlvasas.csproj", "{EA275209-58D0-4793-B732-6BB0899FC1CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WriteAll", "WriteAll\WriteAll.csproj", "{E90324E6-AC92-4BB2-BEBA-98B508A55FD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pilotak", "Pilotak\Pilotak.csproj", "{1EAD38C5-0B16-4DD6-95EF-5008A612BB48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{EA275209-58D0-4793-B732-6BB0899FC1CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA275209-58D0-4793-B732-6BB0899FC1CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA275209-58D0-4793-B732-6BB0899FC1CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E90324E6-AC92-4BB2-BEBA-98B508A55FD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E90324E6-AC92-4BB2-BEBA-98B508A55FD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E90324E6-AC92-4BB2-BEBA-98B508A55FD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E90324E6-AC92-4BB2-BEBA-98B508A55FD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EAD38C5-0B16-4DD6-95EF-5008A612BB48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EAD38C5-0B16-4DD6-95EF-5008A612BB48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EAD38C5-0B16-4DD6-95EF-5008A612BB48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EAD38C5-0B16-4DD6-95EF-5008A612BB48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

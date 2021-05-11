@@ -40,15 +40,18 @@ namespace TombbeOlvasas
             try
             {
                 FileStream fajl = new FileStream("angolok.txt",FileMode.Create);
-                StreamWriter wr = new StreamWriter(fajl,Encoding.UTF8);
 
-                wr.WriteLine($"Név,Helyezés,Ország,Nyeremény");
-                foreach (var i in angolok)
+                using (StreamWriter wr = new StreamWriter(fajl, Encoding.UTF8))
                 {
-                    wr.WriteLine($"{i.Nev},{i.Helyezes},{i.Orszag},{i.Nyeremeny}");
+                    wr.WriteLine($"Név,Helyezés,Ország,Nyeremény");
+                    foreach (var i in angolok)
+                    {
+                        wr.WriteLine($"{i.Nev},{i.Helyezes},{i.Orszag},{i.Nyeremeny}");
+                    }
                 }
+                          
 
-                wr.Close();
+              
 
                 Console.WriteLine("Fájlba írás kész!");
             }
