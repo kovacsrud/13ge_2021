@@ -17,17 +17,8 @@ namespace TombbeOlvasas
                 var sorok = File.ReadAllLines(@"g:\snooker.txt",Encoding.Default);
 
                 for (int i = 1; i < sorok.Length; i++)
-                {
-                    var darabok = sorok[i].Split(';');
-                    Versenyzo versenyzo = new Versenyzo {
-                        Helyezes = Convert.ToInt32(darabok[0]),
-                        Nev = darabok[1],
-                        Orszag = darabok[2],
-                        Nyeremeny = Convert.ToInt32(darabok[3])
-
-                    };
-
-                    versenyzok.Add(versenyzo);
+                {                  
+                    versenyzok.Add(new Versenyzo(sorok[i],';'));
                 }
             }
             catch (Exception ex)
