@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfHomerseklet", "WpfHomers
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfKontenerek", "WpfKontenerek\WpfKontenerek.csproj", "{4C96FA18-D220-4D0F-AFB3-03AB2F2B8014}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAdatok", "WpfAdatok\WpfAdatok.csproj", "{4D847D3B-154D-49C9-8676-4E2958D18CC3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4C96FA18-D220-4D0F-AFB3-03AB2F2B8014}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C96FA18-D220-4D0F-AFB3-03AB2F2B8014}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C96FA18-D220-4D0F-AFB3-03AB2F2B8014}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D847D3B-154D-49C9-8676-4E2958D18CC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D847D3B-154D-49C9-8676-4E2958D18CC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D847D3B-154D-49C9-8676-4E2958D18CC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D847D3B-154D-49C9-8676-4E2958D18CC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
