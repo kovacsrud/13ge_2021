@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,33 @@ namespace WpfAdatok
     /// </summary>
     public partial class MainWindow : Window
     {
+        VersenyzoAdatok versenyzok;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void buttonBetolt_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+
+            try
+            {
+                if (dialog.ShowDialog() == true)
+                {
+                    versenyzok = new VersenyzoAdatok(dialog.FileName, ';', 1);
+                    MessageBox.Show($"Adatok száma:{versenyzok.Versenyzok.Count}");
+                    datagridAdatok.ItemsSource = versenyzok.Versenyzok;
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);                
+            }
+
+            
+
         }
     }
 }

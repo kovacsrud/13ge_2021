@@ -7,6 +7,27 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <TabControl>
+            <TabItem Header="Betöltés">
+                <Button x:Name="buttonBetolt" Width="200" Height="30" Content="Tallózás" Click="buttonBetolt_Click"/>
+            </TabItem>
+            <TabItem Header="Adatok megjelenítése">
+                <DataGrid x:Name="datagridAdatok"  ColumnWidth="*" />
+            </TabItem>
+            <TabItem Header="Keresés név szerint">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="4*"/>
+                    </Grid.RowDefinitions>
+                    <WrapPanel>
+                        <TextBox x:Name="textboxKeresett" Width="300" FontSize="30"/>
+                        <Button x:Name="buttonKereses" Content="Keres" Width="200" Height="40"/>
+                    </WrapPanel>
+                    <DataGrid x:Name="datagridKereses" ColumnWidth="*" Grid.Row="1"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
         
     </Grid>
 </Window>
