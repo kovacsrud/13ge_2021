@@ -22,7 +22,7 @@
                     </Grid.RowDefinitions>
                     <WrapPanel>
                         <TextBox x:Name="textboxKeresett" Width="300" FontSize="30"/>
-                        <Button x:Name="buttonKereses" Content="Keres" Width="200" Height="40"/>
+                        <Button x:Name="buttonKereses" Content="Keres" Width="200" Height="40" Click="buttonKereses_Click"/>
                     </WrapPanel>
                     <DataGrid x:Name="datagridKereses" ColumnWidth="*" Grid.Row="1"/>
                 </Grid>

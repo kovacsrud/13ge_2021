@@ -49,5 +49,28 @@ namespace WpfAdatok
             
 
         }
+
+        private void buttonKereses_Click(object sender, RoutedEventArgs e)
+        {
+            if (versenyzok==null)
+            {
+                MessageBox.Show("Be kell tölteni az adatokat!");
+            } else
+            {
+                var keresett = textboxKeresett.Text;
+
+                var eredmeny = versenyzok.Versenyzok.FindAll(x=>x.Nev.ToLower().Contains(keresett.ToLower()));
+
+                if (eredmeny.Count>0)
+                {
+
+                    datagridKereses.ItemsSource = eredmeny;
+
+                } else
+                {
+                    MessageBox.Show("Nincs találat!");
+                }
+            }
+        }
     }
 }
