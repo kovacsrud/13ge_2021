@@ -38,6 +38,7 @@ namespace WpfEladasok
                 {
                     gameData = new GameData(dialog.FileName,';',1);
                     MessageBox.Show($"Betöltött adatsorok száma:{gameData.Games.Count}");
+                    datagridAdatok.ItemsSource = gameData.Games;
                 }
                 catch (Exception ex)
                 {
