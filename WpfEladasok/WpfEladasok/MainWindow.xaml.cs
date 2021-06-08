@@ -38,12 +38,29 @@ namespace WpfEladasok
                 {
                     gameData = new GameData(dialog.FileName,';',1);
                     MessageBox.Show($"Betöltött adatsorok száma:{gameData.Games.Count}");
+                    tabKereses.IsEnabled = true;
                     datagridAdatok.ItemsSource = gameData.Games;
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.StackTrace,"Hiba!",MessageBoxButton.OK,MessageBoxImage.Error);                    
                 }
+            }
+
+        }
+
+        private void buttonKeres_Click(object sender, RoutedEventArgs e)
+        {
+            var eredmeny = gameData.Games.FindAll(x=>x.Name.ToLower().Contains(textboxName.Text.ToLower()));
+            datagridKereses.ItemsSource = null;
+            
+
+            if (eredmeny.Count==0)
+            {
+                MessageBox.Show("Nincs a feltételnek megfelelő adat!", "Információ", MessageBoxButton.OK, MessageBoxImage.Information);
+            } else
+            {
+                datagridKereses.ItemsSource = eredmeny;
             }
 
         }

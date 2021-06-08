@@ -14,7 +14,7 @@
             <TabItem Header="Adatok">
                 <DataGrid x:Name="datagridAdatok" ColumnWidth="*"/>
             </TabItem>
-            <TabItem Header="Keresés">
+            <TabItem x:Name="tabKereses" IsEnabled="False" Header="Keresés">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="1*"/>
@@ -22,7 +22,7 @@
                     </Grid.RowDefinitions>
                     <WrapPanel VerticalAlignment="Center">
                         <TextBox x:Name="textboxName" Width="300" Height="30" FontSize="20"/>
-                        <Button x:Name="buttonKeres" Content="Keresés" />
+                        <Button x:Name="buttonKeres" Content="Keresés" Click="buttonKeres_Click" />
                     </WrapPanel>
                     <DataGrid x:Name="datagridKereses" ColumnWidth="*" Grid.Row="1"/>
                 </Grid>
